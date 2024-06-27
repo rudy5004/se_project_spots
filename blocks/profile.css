@@ -11,40 +11,28 @@
 
 
 .profile__name-description-edit{
-    max-width: 420px;
-    max-height: 190px;
     display: flex;
     flex-direction: column;
 }
 
 .profile__avatar{
-    max-width: 190px;
-    max-height: 190px;
     border-radius: 8px;
     padding: 0 20px 0 0;
 }
 
 .profile__name-aviator{
-    /* edit poppins*/
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     weight: 500px;
     size: 16px;
     line-height: 16px;
-    max-width: 97px;
-    max-height: 16px;
     margin: 0;
 
 }
 
 .profile__name-bessie{
-    /* edit poppins*/
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     weight: 500px;
-    max-height: 32px;
     size: 32px;
     line-height: 32px;
     color: #212121;
-    max-width: 420px;
     margin: 0 0;
     padding: 0 0 12px;
 
@@ -55,11 +43,7 @@
 
 
 .profile__edit-button{
-    /* edit poppins*/
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     margin-top: auto;
-    max-width: 107.34px;
-    max-height: 16px;
     color: rgba(33, 33, 33, 1);
     background-color: #FCF5E5;
     border: none;
@@ -76,6 +60,9 @@
 }
 
 .profile__edit-text{
+    weight: 500;
+    font-size: 16px;
+    line-height: 16px;
 
 }
 
@@ -100,13 +87,9 @@
 
 .profile__plus-text{
     color: 2px solid rgba(252, 245, 229, 1);
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     weight: 500;
-    size: 16px;
+    font-size: 16px;
     padding: 0 0 0 8px;
     line-height: 16px;
     margin: 0 0;
-   
-
-
 }

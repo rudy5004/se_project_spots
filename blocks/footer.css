@@ -5,12 +5,8 @@
 }
 
 .footer__text{
-    max-width: 104px;
-    max-height: 16px;
-    /*edit poppins*/
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
     weight: 400;
-    size: 16px;
+    font-size: 16px;
     line-height: 16px;
     color: rgba(33, 33, 33, 0.7);
     margin: 60px auto;

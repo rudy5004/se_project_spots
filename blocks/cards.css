@@ -101,10 +101,9 @@
     display:flex;
     justify-content: space-between;
     margin: 0 0;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    /*edit weight in poppins* weight: 500*/
     font-size: 20px;
     line-height: 24px;
+    weight: 500;
     /*doesnt work nth of type...ect...also max -width check*/
     max-width: 353;
     text-overflow: ellipsis;
