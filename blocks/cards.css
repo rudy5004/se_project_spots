@@ -1,0 +1,123 @@
+.cards{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    border-bottom: 1px rgba(33, 33, 33, .4) solid; 
+}
+
+
+.cards_grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 413px);
+    grid-template-rows: repeat(auto-fit, 455px);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+
+
+}
+.cards__grid-one{
+    margin: 0 0;
+
+}
+.cards__photo-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 413px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0;
+
+}
+
+.cards__grid-two{
+    margin: 0 0;
+
+}
+.cards__photo-two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 413px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0;
+}
+.cards__grid-three{
+    margin: 0 0;
+
+}
+.cards__photo-three{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 413px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0;
+}
+.cards__grid-four{
+    margin: 0 0;
+
+}
+.cards__photo-four{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 413px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0;
+}
+.cards__grid-five{
+    margin: 0 0;
+
+}
+.cards__photo-five{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 413px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0;
+}
+.cards__grid-six{
+    margin: 0 0;
+
+}
+.cards__photo-six{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 413px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0;
+}
+
+.cards_description{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    /*edit weight in poppins* weight: 500*/
+    font-size: 20px;
+    line-height: 24px;
+    /*doesnt work nth of type...ect...also max -width check*/
+    max-width: 353;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cards_heart-icon {
+    width: 23px;
+    height: 20px;
+    margin: 0 0;
+    /* instructor added this
+    border: none;
+    background-color: transparent;
+    */
+}

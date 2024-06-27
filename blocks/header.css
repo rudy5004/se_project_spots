@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.header__logo{
+    /*instcutor just used width pix not max*/
+    max-width: 94px;
+    max-height: 26px;
+
+}
