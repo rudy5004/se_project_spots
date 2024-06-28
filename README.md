@@ -10,7 +10,7 @@ Spots is a project allowing the student to code a webpage from scratch.  Given a
   
 ## Deployment
 
-This webpage is deployed to GitHub pages at https://www.github.com/rudy5004
+This webpage is deployed to GitHub pages at the following [link](https://rudy5004.github.io/se_project_spots/)
 
   
 **Image**  
