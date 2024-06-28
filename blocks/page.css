@@ -1,9 +1,7 @@
-/* how do i make the margins the way he showed in Figma video*/
-/* how do you center the entire page...when i open up the inspect its off */
 .page{
     background: #FCF5E5;
-    max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 

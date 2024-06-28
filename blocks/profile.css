@@ -4,11 +4,7 @@
     margin: 0 auto;
     padding: 34px 0 20px 0;
     border-bottom: 1px rgba(33, 33, 33, .4) solid; 
-    
 }
-
-
-
 
 .profile__name-description-edit{
     display: flex;
@@ -22,29 +18,37 @@
 
 .profile__name-aviator{
     weight: 500px;
-    size: 16px;
+    font-size: 16px;
     line-height: 16px;
-    margin: 0;
-
+    margin: 0px;
+    color: rgba(33, 33, 33, 0.7);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
 }
 
 .profile__name-bessie{
     weight: 500px;
-    size: 32px;
+    font-size: 32px;
     line-height: 32px;
     color: #212121;
     margin: 0 0;
     padding: 0 0 12px;
-
-
-
-
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
 }
 
 
 .profile__edit-button{
     margin-top: auto;
-    color: rgba(33, 33, 33, 1);
+    color: rgba(33, 33, 33, .7);
     background-color: #FCF5E5;
     border: none;
     display: flex;
@@ -66,12 +70,14 @@
 
 }
 
+/*need help with button*/
+
 .profile__new-post-button{
     margin-left: auto;
     align-self: flex-end;
     display: flex;
     align-items: center;
-    padding: 18px 32px;
+    padding: 18px 24px 18px 32px;
     border-radius: 8px;
     background-color: #212121;
     color: #FFF;
@@ -93,3 +99,121 @@
     line-height: 16px;
     margin: 0 0;
 }
+
+@media screen and (max-width: 655px) {
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px rgba(33, 33, 33, .4) solid; 
+    
+    }
+    
+    .profile__avatar{
+        border-radius: 8px;
+        padding: 0 0px 12px 0px;
+        max-width: 80px;
+        max-height: 80px;
+
+    }
+
+    .profile__name-description-edit{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ellipsis doesnt work; */
+    .profile__name-bessie{
+        weight: 500px;
+        size: 20px;
+        line-height: 20px;
+        color: #212121;
+        margin: 0 0;
+        padding: 0 0 6px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-width: 288px;
+    }
+    
+    /* ellipsis doesnt work; */
+    .profile__name-aviator{
+        weight: 500px;
+        size: 16px;
+        line-height: 16px;
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 32px;
+        color: rgba(33, 33, 33, 0.7);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-width: 288 px;
+
+    }
+    
+    
+    .profile__edit-button{
+        color: rgba(33, 33, 33, .7);
+        background-color: #FCF5E5;
+        border: none;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 20px 0;
+        align-items: center;
+    }
+    
+    .profile__edit-pencil-icon{
+        display: flex;
+        padding: 0 8px 0 0;
+       
+    }
+    
+    .profile__edit-text{
+        weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+
+    
+    }
+
+    /* need help with button*/
+    }
+    .profile__new-post-button{
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        padding: 18px 32px;
+        border-radius: 8px;
+        background-color: #212121;
+        color: #FFF;
+
+        
+    }
+    
+    
+    .profile__plus-icon{
+        max-width: 12px;
+        max-height: 12px;
+        color: 2px solid rgba(252, 245, 229, 1);
+     
+    }
+    
+    .profile__plus-text{
+        color: 2px solid rgba(252, 245, 229, 1);
+        weight: 500;
+        font-size: 16px;
+        padding: 0 0 0 8px;
+        line-height: 16px;
+        margin: 0 0;
+    }
