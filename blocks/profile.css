@@ -24,8 +24,8 @@
     font-size: 32px;
     line-height: 1;
     color: #212121;
-    margin: 0 0;
-    padding: 0 0 12px;
+    margin: 0 0 12px;
+    padding: 0 0;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
@@ -78,25 +78,23 @@
     padding: 18px 24px 18px 32px;
     border-radius: 8px;
     background-color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
     color: #FFF;
+    
 }
 
 
 .profile__plus-icon{
     max-width: 12px;
     max-height: 12px;
+    margin: 0 8px 0 0;
     color: 2px solid rgba(252, 245, 229, 1);
  
 }
 
-.profile__plus-text{
-    color: 2px solid rgba(252, 245, 229, 1);
-    font-weight: 500;
-    font-size: 16px;
-    padding: 0 0 0 8px;
-    line-height: 1;
-    margin: 0 0;
-}
+
 
 @media screen and (max-width: 662px) {
 
@@ -191,9 +189,9 @@
         background-color: #212121;
         color: #FFF;
         width: 288px;
-
-
-        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1;
     }
     
     
@@ -202,14 +200,5 @@
         max-height: 12px;
         color: 2px solid rgba(252, 245, 229, 1);
      
-    }
-    
-    .profile__plus-text{
-        color: 2px solid rgba(252, 245, 229, 1);
-        font-weight: 500;
-        font-size: 16px;
-        padding: 0 0 0 8px;
-        line-height: 1;
-        margin: 0 0;
     }
 }
