@@ -1,6 +1,6 @@
 .footer{
     display: flex;
-    max-width: 1440px;
+    max-width: 1280px;
     background: #FCF5E5;
     margin: 0 auto;
 }
@@ -8,7 +8,7 @@
 .footer__text{
     font-weight: 400;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
     color: rgba(33, 33, 33, 0.7);
     margin: 60px auto;
    
