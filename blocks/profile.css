@@ -16,22 +16,8 @@
     padding: 0 20px 0 0;
 }
 
-.profile__name-aviator{
-    weight: 500px;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 0px;
-    color: rgba(33, 33, 33, 0.7);
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    max-width: 420px;
-}
-
 .profile__name-bessie{
-    weight: 500px;
+    font-weight: 500;
     font-size: 32px;
     line-height: 32px;
     color: #212121;
@@ -45,6 +31,19 @@
     max-width: 420px;
 }
 
+.profile__name-aviator{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0px;
+    color: rgba(33, 33, 33, 0.7);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
+}
 
 .profile__edit-button{
     margin-top: auto;
@@ -64,7 +63,7 @@
 }
 
 .profile__edit-text{
-    weight: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 16px;
 
@@ -93,7 +92,7 @@
 
 .profile__plus-text{
     color: 2px solid rgba(252, 245, 229, 1);
-    weight: 500;
+    font-weight: 500;
     font-size: 16px;
     padding: 0 0 0 8px;
     line-height: 16px;
@@ -128,7 +127,7 @@
 
     /* ellipsis doesnt work; */
     .profile__name-bessie{
-        weight: 500px;
+        font-weight: 500;
         size: 20px;
         line-height: 20px;
         color: #212121;
@@ -144,7 +143,7 @@
     
     /* ellipsis doesnt work; */
     .profile__name-aviator{
-        weight: 500px;
+        font-weight: 500;
         size: 16px;
         line-height: 16px;
         margin: 0;
@@ -169,6 +168,7 @@
         justify-content: center;
         padding: 0 0 20px 0;
         align-items: center;
+
     }
     
     .profile__edit-pencil-icon{
@@ -178,7 +178,7 @@
     }
     
     .profile__edit-text{
-        weight: 500;
+        font-weight: 500;
         font-size: 16px;
         line-height: 16px;
 
@@ -211,7 +211,7 @@
     
     .profile__plus-text{
         color: 2px solid rgba(252, 245, 229, 1);
-        weight: 500;
+        font-weight: 500;
         font-size: 16px;
         padding: 0 0 0 8px;
         line-height: 16px;

@@ -21,9 +21,13 @@
     margin: 0 0 0 0px;
     padding-top: 12px;
     padding-bottom: 0px;
-    weight: 500px;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 352px;
 }
 .card__like-btn{
     background-image: url(../images/hearticon.svg);
@@ -40,6 +44,16 @@
     height: 288px;
     width: 288px;
     
+}
+
+.card__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 245px;
 }
 
 }
