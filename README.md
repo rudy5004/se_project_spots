@@ -13,6 +13,7 @@ Spots is a project allowing the student to code a webpage from scratch.  Given a
 This webpage is deployed to GitHub pages at the following [link](https://rudy5004.github.io/se_project_spots/)
 
   
-**Image**  
-![alt text](./images/README-images/Spots-Webpage-pic.png)
+**Images / Video**  
+![website link](./images/README-images/Spots-Webpage-pic.png)
 
+[Video link](https://drive.google.com/file/d/1_BrOlmkNdlYtxPBljZgpRR34xcqu_r8t/view?usp=sharing)
