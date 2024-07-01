@@ -145,10 +145,6 @@
         padding: 0 0 20px 0;
     }
 
-    .profile__edit-pencil-icon{
-        padding: 0 8px 0 0; 
-    }
-
     .profile__new-post-button{
         margin: 0px;
         display: flex;
