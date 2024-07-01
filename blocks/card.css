@@ -40,7 +40,7 @@
     opacity: .4;
 }
 
-.card__like-btn{
+.card__like-btn:hover{
     cursor: pointer;
 }
 
@@ -59,10 +59,6 @@
     white-space: nowrap;
     overflow: hidden;
     max-width: 245px;
-}
-
-.card__like-btn{
-    cursor: pointer;
 }
 
 }
