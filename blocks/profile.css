@@ -112,46 +112,30 @@
     }
 
     .profile__name-description-edit{
-        display: flex;
-        flex-direction: column;
         text-align: center;
     }
 
     .profile__name-main {
         margin: 0 0 6px 0;
         font-size: 20px;
-        padding: 0 0;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         max-width: 288px;
     }
     
     .profile__name-description{
         margin: 0 0 32px 0;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         max-width: 288px;
     }
     
     .profile__edit-button{
-        display: flex;
         justify-content: center;
         padding: 0 0 20px 0;
     }
 
     .profile__new-post-button{
         margin: 0px;
-        display: flex;
         justify-content: center;
         align-self: center;
         padding: 18px 32px;
-        border-radius: 8px;
         width: 288px;
     }
 
