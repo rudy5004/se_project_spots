@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="page">
+        </section>
         <header class="header">
             <img src="./images/logo.svg" alt="spots logo" class="header__logo">
         </header>
@@ -83,6 +84,39 @@
             2023 © Spots
             </p>
         </footer>
+        <div class="modal modal_opened">
+            <div class="modal__container">
+                <button type="submit" class="modal__close-btn">
+                    <img src="./images/xicon.svg" alt="xicon.svg">
+                </button>
+                <h2 class="modal__title">Edit profile</h2>
+                <form name="edit-profile" class="modal__form">
+                    <label for="name" class="modal__label">
+                        Name
+                        <input 
+                        id="name" 
+                        type="text"  
+                        name="username" 
+                        class="modal__input" 
+                        placeholder="Type your name" 
+                        />
+                    </label>
+                    <label for="description" class="modal__label">
+                        Description
+                        <input 
+                        id="description" 
+                        type="text"  
+                        name="description" 
+                        class="modal__input" 
+                        placeholder="Describe yourself" 
+                        />
+                    </label>
+                    <button type="submit" class="modal__submit-btn">
+                        Save
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="./scripts/index.js" defer></script>
 </body>
