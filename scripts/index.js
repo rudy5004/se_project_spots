@@ -36,6 +36,7 @@ const cardTemplate = document.querySelector(`#card-template`);
 const cardsList = document.querySelector(`.cards__list`);
 
 function getCardElement(data){
+
     const cardElement = cardTemplate.content.querySelector(`.card`).cloneNode(true);
     const cardClass = cardElement.querySelector(`.card`);
     const cardDeleteBtn = cardElement.querySelector(`.card__delete-btn`);
@@ -53,8 +54,8 @@ function getCardElement(data){
     });
 
     cardDeleteBtn.addEventListener("click", () => {
-    cardDeleteBtn.classList.toggle('card__delete-btn');
-    cardClass.classList.remove('card');
+        cardDeleteBtn.classList.toggle('card__delete-btn');
+        cardElement.remove();
     });
     
 

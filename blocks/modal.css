@@ -17,7 +17,7 @@
     visibility: visible;
 }
 
-.modal__container{
+.modal__content{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -27,6 +27,15 @@
     max-width: 730px;
     width: 100%;
 }
+
+.modal__content_type_preview{
+    padding: 0;
+}
+
+.modal__image{
+    width: 100%;
+}
+
 .modal__close-btn{
     position: absolute;
     top: 32px;
@@ -38,9 +47,18 @@
     background-color:#FFF;
     padding: 0 0;
 }
+
+.modal__close_type_preview{
+    position: absolute;
+    background-image: url(../images/closeicon.svg);
+    top: 0;
+    right: -32;
+}
+
 .modal__close-btn:hover{
     cursor:pointer;
 }
+
 .modal__title{
     font-weight: 500;
     font-size: 32px;
@@ -87,6 +105,8 @@
 .modal__submit-btn:hover{
     cursor:pointer;
 }
+
+
 
 
 

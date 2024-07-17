@@ -52,7 +52,7 @@
             </p>
         </footer>
         <div class="modal" id="edit-modal">
-            <div class="modal__container">
+            <div class="modal__content">
                 <button type="submit" class="modal__close-btn">
                     <img src="./images/xicon.svg" alt="xicon.svg">
                 </button>
@@ -85,9 +85,9 @@
             </div>
         </div>
         <div class="modal" id="add-card-modal">
-            <div class="modal__container">
+            <div class="modal__content">
                 <button type="submit" class="modal__close-btn">
-                    <img src="./images/xicon.svg" alt="xicon.svg">
+                    <img src="./images/closeicon.svg" alt="xicon.svg">
                 </button>
                 <h2 class="modal__title">New post</h2>
                 <form id="add-card-form" class="modal__form">
@@ -115,6 +115,17 @@
                         Save
                     </button>
                 </form>
+            </div>
+        </div>
+        <div class="modal modal_opened" id="preview-modal">
+            <div class="modal__content modal__content_type_preview"> 
+                <button 
+                aria-label="Close modal"
+                class="modal__close-btn modal__close_type_preview"
+                type="button"
+                ></button>
+                <img src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg" alt="" class="modal__image">
+                <p >Val Thorens</p>
             </div>
         </div>
     </div>
