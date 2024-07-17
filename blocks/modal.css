@@ -81,6 +81,7 @@
     color: #FFF;
     background-color: rgb(33, 33, 33);
     padding: 0 0;
+    transition: background .3s;
 }
 
 .modal__submit-btn:hover{
