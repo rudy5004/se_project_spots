@@ -27,6 +27,9 @@
     border-radius: 8px;
     object-fit: cover;
 }
+.card__image:hover {
+    cursor: pointer;
+}
 .card__content{
     display: flex;
     justify-content: space-between;
@@ -66,14 +69,11 @@
 
 
 @media screen and (max-width: 662px) {
-
 .card__image {
     height: 288px;
     width: 288px;
 }
-
 .card__title{
     max-width: 210px;
 }
-
 }
