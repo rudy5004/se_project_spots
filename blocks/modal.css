@@ -28,7 +28,6 @@
 }
 .modal__content_type_preview{
     padding: 0;
-    gap: 8px;
     background-color: rgba(0, 0, 0, 0);
     max-width: fit-content;
 }
@@ -112,19 +111,22 @@
     border-radius: 8px;
     object-fit: contain;
     align-items: center;
+    display: block;
 }
 .modal__pic-description {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #FFF;
-    background-color:#212121;
+    background-color: #212121;
     margin: 0px 0px;
     border-radius: 8px;
     padding: 4px 8px;
-    /* width needs to be dynamic */
-    width: 135px; 
     box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
 }
 
 
@@ -145,8 +147,8 @@
         right: 12px;
     }
     .modal__close_type_preview{
-        top: 41px;
-        right: 16px;
+        top: -48px;
+        right: 0px;
     }
     .modal__title{
         font-size: 20px;
