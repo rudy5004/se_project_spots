@@ -11,18 +11,16 @@
     justify-content: center;
     visibility: hidden;
     box-sizing:border-box;
+    opacity: 0;
     padding: 0 20px;
     transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 /*good*/
 .modal_opened {
     visibility: visible;
+    opacity: 1;
 }
 
-
-.modal_opened:hover{
-    opacity:1;
-}
 
 
 /*good*/
