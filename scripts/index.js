@@ -11,6 +11,8 @@ link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/sp
 link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/5-photo-by-van-anh-nguyen-from-pexels.jpg"},
 {name: "Mountain house",
 link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg"},
+{name: "landscape view",
+link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"},
 ];
 
 const editModalBtn = document.querySelector(".profile__edit-button");
@@ -31,6 +33,11 @@ const cardFormElement = cardModal.querySelector(`.modal__form`);
 const cardModalLinkInput = cardModal.querySelector(`#add-card-link-input`);
 const cardModalNameInput = cardModal.querySelector(`#add-card-name-input`);
 
+const previewModal = document.querySelector('#preview-modal');
+const previewModalImage = previewModal.querySelector(".modal__image");
+const previewModalPicDescription = previewModal.querySelector(".modal__pic-description");
+const previewModalCloseBtn = previewModal.querySelector(".modal__close_type_preview");
+
 
 const cardTemplate = document.querySelector(`#card-template`);
 const cardsList = document.querySelector(`.cards__list`);
@@ -50,7 +57,7 @@ function getCardElement(data){
 
     
     cardLikeBtn.addEventListener("click", () => {
-    cardLikeBtn.classList.toggle("card__like-button_liked");
+        cardLikeBtn.classList.toggle("card__like-button_liked");
     });
 
     cardDeleteBtn.addEventListener("click", () => {
@@ -58,6 +65,16 @@ function getCardElement(data){
         cardElement.remove();
     });
     
+    cardImageElement.addEventListener("click", () => {
+        openModal(previewModal);
+        previewModalImage.src = data.link;
+        previewModalImage.alt = data.name;
+        previewModalPicDescription.textContent = data.name;
+    });
+
+    previewModalCloseBtn.addEventListener("click", () =>{
+        closeModal(previewModal);
+    });
 
     return cardElement;
 }
@@ -83,7 +100,6 @@ function handleCardFormSubmit(evt){
     cardsList.prepend(cardElement);
     closeModal(cardModal);
 }
-
 editModalBtn.addEventListener("click", () => {
     editModalNameInput.value = profileName.textContent;
     editModalDescriptionInput.value = profileDescription.textContent;
@@ -92,6 +108,7 @@ editModalBtn.addEventListener("click", () => {
 editModalCloseBtn.addEventListener("click", () => {
     closeModal(editModal) 
 });
+
 editFormElement.addEventListener('submit', handleEditFormSubmit);
 
 cardModalBtn.addEventListener("click", () => {

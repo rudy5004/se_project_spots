@@ -1,3 +1,4 @@
+/*good*/
 .modal{
     position: fixed;
     top: 0;
@@ -11,31 +12,47 @@
     visibility: hidden;
     box-sizing:border-box;
     padding: 0 20px;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
-
+/*good*/
 .modal_opened {
     visibility: visible;
 }
 
+
+.modal_opened:hover{
+    opacity:1;
+}
+
+
+/*good*/
 .modal__content{
-    display: flex;
-    flex-direction: column;
     position: relative;
     background-color: #FFF;
     padding: 32px 50px;
     border-radius: 8px;
     max-width: 730px;
     width: 100%;
+    /*
+    he has box-sizing: border-box
+    */
 }
-
 .modal__content_type_preview{
     padding: 0;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
 }
-
+/*good*/
 .modal__image{
     width: 100%;
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 8px;
+    object-fit: contain;
+    align-items: center;
 }
-
 .modal__close-btn{
     position: absolute;
     top: 32px;
@@ -43,22 +60,36 @@
     max-width: 40px;
     height: 40px;
     border: 0px;
-    color: rgba(33, 33, 33, 0.4);
     background-color:#FFF;
     padding: 0 0;
 }
-
-.modal__close_type_preview{
-    position: absolute;
-    background-image: url(../images/closeicon.svg);
-    top: 0;
-    right: -32;
-}
-
 .modal__close-btn:hover{
     cursor:pointer;
 }
-
+.modal__close_type_preview {
+    cursor: pointer;
+    position: absolute;
+    background-image: url(../images/closeiconlight.svg);
+    top: 0px;
+    right: -52.5px;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    opacity: .4;
+}
+.modal__pic-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFF;
+    background-color:#212121;
+    margin: 0px 0px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    /* width needs to be dynamic */
+    width: 135px; 
+    box-sizing: border-box;
+}
 .modal__title{
     font-weight: 500;
     font-size: 32px;
@@ -93,33 +124,43 @@
     line-height: 1;
 }
 .modal__submit-btn{
+    font-size: 16px;
+    line-height: 1;
+    color: #fcf5e5;
+    width: 100%;
     width: 156px;
     height: 52px;
+    border: none;
     border-radius: 8px;
     color: #FFF;
-    background-color: rgb(33, 33, 33);
+    background-color: #212121;
     padding: 0 0;
     transition: background .3s;
 }
 
 .modal__submit-btn:hover{
+    background: rgba(0, 0, 0, .8);
     cursor:pointer;
 }
-
-
-
-
 
 @media screen and (max-width: 662px) {
     .modal{
         padding: 0 10px;
         box-sizing: border-box;
-        
     }
-
     .modal__container{
         padding: 12px 12px;
-       
+    }
+
+    .modal__close_type_preview{
+        top: 41px;
+        right: 16px;
+    }
+
+    /* cant get ride of purple margin*/
+    .modal__content_type_preview{
+        border-radius: 4px;
+        padding: 0px 6px;
     }
     .modal__close-btn{
         position: absolute;
@@ -134,7 +175,6 @@
     }
     .modal__form{
         margin: 24px 0px;
-    
     }
     .modal__label{
         padding: 0 0 24px;
@@ -145,6 +185,5 @@
     .modal__submit-btn{
         width: 100%;
         padding: 18px 118px;
-
     }
 }
