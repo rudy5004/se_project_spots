@@ -137,6 +137,9 @@
         padding: 0 10px;
         box-sizing: border-box;
     }
+    .modal__content{
+        padding: 12px 12px;
+    }
     .modal__content_type_preview{
         border-radius: 4px;
         padding: 0px 6px;
@@ -157,7 +160,7 @@
         padding: 10px 0 10px;
     }
     .modal__form{
-        margin: 24px 0px;
+        margin: 24px 0 0;
     }
     .modal__label{
         padding: 0 0 24px;
