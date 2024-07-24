@@ -90,13 +90,16 @@
 .modal__input_type_error{
     border: 1px solid rgba(255, 0, 0, 0.6);
 }
-.modal__error{
+.modal__span{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1;
     color: rgba(255, 0, 0, .7);
+    opacity: 0;
 }
-
+.modal__error{
+    opacity: 1
+}
 .modal__button{
     font-size: 16px;
     line-height: 1;
