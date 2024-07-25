@@ -1,4 +1,4 @@
-# Project 3: Spots
+# Project 6: Spots
 
 "Spot" is a comprehensive social media platform designed for seamless user interaction and content sharing. It enables users to upload photos, provide detailed descriptions of images, and engage with content through likes and other interactive features. The platform supports dynamic profile management, allowing users to edit their profiles in real-time. It employs a responsive design architecture, incorporating page breaks to ensure optimal accessibility and usability for desktops, tablets and mobile devices.
 
