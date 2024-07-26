@@ -44,7 +44,7 @@
 .modal__close-btn:hover{
     cursor:pointer;
 }
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
     cursor: pointer;
     position: absolute;
     background-image: url(../images/closeiconlight.svg);
@@ -169,7 +169,7 @@
         top: 12px;
         right: 12px;
     }
-    .modal__close_type_preview{
+    .modal__close-btn_type_preview{
         top: -48px;
         right: 0px;
     }
@@ -196,6 +196,9 @@
     .modal__input{
         font-size: 16px;
     }
+    .modal__button{
+        width: 100%;
+     }
     .modal__submit-btn{
         width: 100%;
     }
