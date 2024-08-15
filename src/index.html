@@ -170,34 +170,63 @@
           <p class="modal__pic-description">hjkh</p>
         </div>
       </div>
-    </div>
-    <!--go over figma-->
-    <!--get validation to work-->
-    <div class="modal" id="avatar-modal">
-      <div class="modal__content">
-        <button type="submit" class="modal__close-btn">
-          <img
-            src="<%=require('./images/closeicon.svg')%>"
-            alt="closeicon.svg"
-          />
-        </button>
-        <h2 class="modal__title">Edit profile avatar</h2>
-        <form id="edit-avatar-form" class="modal__form">
-          <label for="profile-avatar-input" class="modal__label">
-            Profile Picture
-            <input
-              id="profile-avatar-input"
-              name="avatar"
-              class="modal__input"
-              placeholder="Paste the link to an image"
-              required
-              type="url"
-              title="Please enter a valid URL"
+      <div class="modal" id="avatar-modal">
+        <div class="modal__content">
+          <button type="submit" class="modal__close-btn">
+            <img
+              src="<%=require('./images/closeicon.svg')%>"
+              alt="closeicon.svg"
             />
-            <span id="profile-avatar-input-error" class="modal__span"></span>
-          </label>
-          <button type="submit" class="modal__button">Save</button>
-        </form>
+          </button>
+          <h2 class="modal__title">Edit profile avatar</h2>
+          <form id="edit-avatar-form" class="modal__form">
+            <label for="profile-avatar-input" class="modal__label">
+              Profile Picture
+              <input
+                id="profile-avatar-input"
+                name="avatar"
+                class="modal__input"
+                placeholder="Paste the link to an image"
+                required
+                type="url"
+                title="Please fill out this field"
+              />
+              <span id="profile-avatar-input-error" class="modal__span"></span>
+            </label>
+            <button type="submit" class="modal__button">Save</button>
+          </form>
+        </div>
+      </div>
+      <!---->
+      <div class="modal modal_delete" id="delete-modal">
+        <div class="modal__content modal__content_delete">
+          <button
+            type="submit"
+            class="modal__close-btn modal__close-btn_delete"
+          >
+            <img
+              src="<%=require('./images/closeicon.svg')%>"
+              alt="closeicon.svg"
+            />
+          </button>
+          <h2 class="modal__title modal__title_delete">
+            Are you sure you want to delete this image?
+          </h2>
+          <form id="delete-avatar-form" class="modal__form modal__form_delete">
+            <button
+              type="submit"
+              class="modal__button modal__button_type_delete"
+            >
+              Delete
+            </button>
+            <button
+              type="button"
+              class="modal__button modal__button_type_submit_delete"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

@@ -5,11 +5,17 @@
   padding: 34px 0 20px 0;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
+.profile__avatar {
+  border-radius: 8px;
+  width: 190px;
+  height: 190px;
+  padding: 0 20px 0 0;
+  object-fit: cover;
+  padding: 0 0 0 0 px;
+}
 .profile__avatar-container {
   position: relative;
 }
-
-/*todo - video 5 11 min*/
 .profile__avatar-btn {
   position: absolute;
   width: 100%;
@@ -18,29 +24,28 @@
   align-items: flex-end;
   justify-content: center;
   visibility: hidden;
-
-  /* todo - finish avatar button styles */
+  padding: 0 0 12px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
 }
-
-.profile__avatar-container:hover .profile__avatar-btn {
-  visibility: visible;
-}
-
 .profile__avatar-btn::after {
   content: "Edit Avatar";
 }
-
-.profile__avatar {
-  border-radius: 8px;
-  width: 190px;
-  height: 190px;
-  padding: 0 20px 0 0;
-  object-fit: cover;
+.profile__pencil-icon {
+  padding: 0 8px 0 0;
 }
-
+.profile__avatar-container:hover .profile__avatar-btn {
+  visibility: visible;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+}
 .profile__name-description-edit {
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 20px;
 }
 .profile__name-main {
   font-weight: 500;
@@ -69,7 +74,6 @@
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
-
 .profile__edit-button {
   margin-top: auto;
   color: rgba(33, 33, 33, 0.7);
@@ -88,7 +92,6 @@
 }
 .profile__edit-pencil-icon {
   display: flex;
-  padding: 0 8px 0 0;
 }
 .profile__new-post-button {
   margin-left: auto;
@@ -111,32 +114,56 @@
   max-height: 12px;
   margin: 0 8px 0 0;
   color: #fcf5e5;
+  padding: 0 8px 0 0;
 }
 
 @media screen and (max-width: 662px) {
   .profile {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0 20px 0;
   }
-  .profile__avatar-btn {
-    visibility: visible;
-  }
-
-  /*Todo - set content of after elment to empty string*/
-  /*todo - finish mobile avatar button styles*/
-
   .profile__avatar {
-    padding: 0 0px 12px 0px;
+    padding: 0 0px 0px 0px;
     max-width: 80px;
     max-height: 80px;
   }
+  .profile__avatar-container {
+    background-color: transparent;
+    height: 80px;
+    width: 80px;
+  }
+  .profile__avatar-btn {
+    border: 0;
+    flex-direction: row-reverse;
+    padding: 0;
+    justify-content: space-between;
+    visibility: visible;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+  }
+  .profile__avatar-btn::after {
+    padding: 0 0 0 0;
+    content: "";
+    display: none;
+  }
+  .profile__pencil-icon {
+    background: rgba(33, 33, 33, 0.6);
+    padding: 0 0 0 0;
+    border-radius: 6px;
+    height: 20px;
+    width: 20px;
+    padding: 4px;
+    margin: 0 4px 4px 0;
+  }
   .profile__name-description-edit {
     text-align: center;
+    padding: 0px;
   }
   .profile__name-main {
-    margin: 0 0 6px 0;
+    margin: 12px 0 6px 0;
     font-size: 20px;
     max-width: 288px;
   }
