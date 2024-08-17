@@ -20,9 +20,11 @@ const avatarModal = document.querySelector("#avatar-modal");
 const avatarModalCloseBtn = avatarModal.querySelector(".modal__close-btn");
 const avatarFormElement = avatarModal.querySelector(`.modal__form`);
 const avatarModalLinkInput = avatarModal.querySelector(`#profile-avatar-input`);
+const avatarSaveBtn = avatarModal.querySelector(`.modal__button`);
 
 const deleteModal = document.querySelector("#delete-modal");
 const deleteForm = deleteModal.querySelector(".modal__form");
+const deleteModalCloseBtn = deleteModal.querySelector(".modal__close-btn");
 
 const allModals = [...document.querySelectorAll(".modal")];
 
@@ -33,6 +35,7 @@ const editModalDescriptionInput = editModal.querySelector(
   `#profile-description-input`
 );
 const editFormElement = editModal.querySelector(`.modal__form`);
+const editSaveBtn = editModal.querySelector(`.modal__button`);
 
 const cardModal = document.querySelector("#add-card-modal");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
@@ -147,7 +150,6 @@ function handleEditFormSubmit(evt) {
     .then((data) => {
       profileName.textContent = data.name;
       profileDescription.textContent = data.about;
-      closeModal(editModal);
     })
     .catch(console.error)
     .finally(() => {
@@ -189,6 +191,7 @@ function handleAvatarSubmit(evt) {
     .then((data) => {
       profileAvatar.src = data.avatar;
       profileAvatar.alt = data.avatar;
+      //closeModal(editModal);
     })
     .catch(console.error)
     .finally(() => {
@@ -256,6 +259,22 @@ avatarModalBtn.addEventListener("click", () => {
 
 avatarModalCloseBtn.addEventListener("click", () => {
   closeModal(avatarModal);
+});
+
+deleteModalCloseBtn.addEventListener("click", () => {
+  closeModal(deleteModal);
+});
+
+deleteForm.addEventListener("click", () => {
+  closeModal(deleteModal);
+});
+
+avatarSaveBtn.addEventListener("click", () => {
+  closeModal(avatarModal);
+});
+
+editSaveBtn.addEventListener("click", () => {
+  closeModal(editModal);
 });
 
 cardFormElement.addEventListener("submit", handleCardFormSubmit);
