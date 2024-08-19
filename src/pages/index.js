@@ -73,9 +73,8 @@ api
       const cardElement = getCardElement(ArrayItem);
       cardsList.prepend(cardElement);
     });
-    //profileAvatar.src = userInfo.avatar;
-    //profileAvatar.alt = userInfo.avatar;
-    console.log(userInfo);
+    profileAvatar.src = userInfo.avatar;
+    profileAvatar.alt = userInfo.avatar;
     profileName.textContent = userInfo.name;
     profileAvatar.alt = userInfo.name;
     profileDescription.textContent = userInfo.about;
@@ -171,9 +170,6 @@ function handleCardFormSubmit(evt) {
   api
     .postInitialCards(inputValues)
     .then((data) => {
-      previewModalPicDescription.textContent = data.name;
-      previewModalImage.src = data.link;
-      previewModalImage.alt = data.name;
       const cardElement = getCardElement(data);
       cardFormElement.reset();
       cardsList.prepend(cardElement);
