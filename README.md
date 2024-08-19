@@ -17,6 +17,8 @@
 - Git
 - GitHub
 - GitHub Pages
+- Webpack
+- Babel
 
 ## Deployment
 

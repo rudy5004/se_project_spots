@@ -73,6 +73,9 @@ api
       const cardElement = getCardElement(ArrayItem);
       cardsList.prepend(cardElement);
     });
+    //profileAvatar.src = userInfo.avatar;
+    //profileAvatar.alt = userInfo.avatar;
+    console.log(userInfo);
     profileName.textContent = userInfo.name;
     profileAvatar.alt = userInfo.name;
     profileDescription.textContent = userInfo.about;
@@ -150,6 +153,7 @@ function handleEditFormSubmit(evt) {
     .then((data) => {
       profileName.textContent = data.name;
       profileDescription.textContent = data.about;
+      closeModal(editModal);
     })
     .catch(console.error)
     .finally(() => {
@@ -191,14 +195,14 @@ function handleAvatarSubmit(evt) {
     .then((data) => {
       profileAvatar.src = data.avatar;
       profileAvatar.alt = data.avatar;
-      //closeModal(editModal);
+      closeModal(avatarModal);
     })
     .catch(console.error)
     .finally(() => {
       setButtonText(submitBtn, !true);
     });
 }
-// Delete button
+
 function handleDeleteSubmit(evt) {
   evt.preventDefault();
   const submitBtn = evt.submitter;
@@ -267,14 +271,6 @@ deleteModalCloseBtn.addEventListener("click", () => {
 
 deleteForm.addEventListener("click", () => {
   closeModal(deleteModal);
-});
-
-avatarSaveBtn.addEventListener("click", () => {
-  closeModal(avatarModal);
-});
-
-editSaveBtn.addEventListener("click", () => {
-  closeModal(editModal);
 });
 
 cardFormElement.addEventListener("submit", handleCardFormSubmit);
