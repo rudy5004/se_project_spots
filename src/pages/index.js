@@ -156,7 +156,7 @@ function handleEditFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitBtn, !true);
+      setButtonText(submitBtn, false);
     });
 }
 function handleCardFormSubmit(evt) {
@@ -178,7 +178,7 @@ function handleCardFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitBtn, !true);
+      setButtonText(submitBtn, false);
     });
 }
 function handleAvatarSubmit(evt) {
@@ -195,7 +195,7 @@ function handleAvatarSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitBtn, !true);
+      setButtonText(submitBtn, false);
     });
 }
 
@@ -211,7 +211,7 @@ function handleDeleteSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      setButtonText(submitBtn, !true, "Delete", "Deleting...");
+      setButtonText(submitBtn, false, "Delete", "Deleting...");
     });
 }
 function closeModalEscape(event) {
