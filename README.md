@@ -1,28 +1,33 @@
-# Project 6: Spots
+# Project 9: Spots
 
-"Spot" is a comprehensive social media platform designed for seamless user interaction and content sharing. It enables users to upload photos, provide detailed descriptions of images, and engage with content through likes and other interactive features. The platform supports dynamic profile management, allowing users to edit their profiles in real-time. It employs a responsive design architecture, incorporating page breaks to ensure optimal accessibility and usability for desktops, tablets and mobile devices.
+"Spot" is a comprehensive social media platform designed to offer seamless user interaction and dynamic content sharing. Users can upload photos, provide detailed descriptions, and engage with content through likes and other interactive features. The platform supports real-time profile management, allowing users to edit their profiles seamlessly. It is built with a responsive design architecture, incorporating page breaks to ensure optimal accessibility and usability across desktops and mobile devices. Recent development sprints have enhanced the platform by integrating it with a database through an API, allowing for persistent changes to user profiles and post. The project involves using a GitHub repository, implementing JavaScript modules, and working with webpack. An Api class encapsulates all API requests, including user authentication via tokens. The development process emphasizes making API requests to fetch and update user data, manage likes and deletions, and ensure robust error handling. Although refactoring to object-oriented programming is not mandatory, the project leverages classes for better code organization and maintainability. This approach ensures a structured, scalable, and efficient codebase, which is essential for continuous development and future scalability.
 
 ### Tech Stack
 
-* DOM
-* Figma
-* Git
-* GitHub
-* HTML/CSS
-* JavaScript
-* Responsive Design
-* VSCode
+- DOM
+- HTML/CSS
+- JavaScript
+- Responsive Design
+- Figma
+- BEM
+- Flexbox/Grid
+- Normalize.css
+- @font-face
+- VSCode
+- Git
+- GitHub
+- GitHub Pages
+- Webpack
+- Babel
 
-
-  
 ## Deployment
 
-This webpage is deployed to GitHub pages at the following [link](https://rudy5004.github.io/se_project_spots/)
+This webpage is deployed to GitHub pages at the following [Link](https://rudy5004.github.io/se_project_spots/)
 
-  
-**Images / Video**  
+**Images / Video**
 
-![Spots Website ](./images/README-images/spots-website.png)
-![Spots Edit Profile Feature](./images/README-images/spots-edit-profile.png)
-![Spots Post/Upload Feature](./images/README-images/spots-new-post.png)
-![Spots Clicked Post](./images/README-images/spots%20pic.png)
+![Spots Main Page](./images/README-images/Main-page.svg)
+![Spots Delete Icon ](./images/README-images/Delete-icon.svg)
+![Spots Avatar](./images/README-images/Edit-profile-avatar.svg)
+![Spots Edit Profile](./images/README-images/Edit-profile.svg)
+![Spots New Post](./images/README-images/New-Post.svg)
